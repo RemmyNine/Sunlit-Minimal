@@ -1,0 +1,283 @@
+
+:root {
+  --background-primary: #ffffff;
+  --background-secondary: #f6f8fa;
+  --background-tertiary: #eaeef2;
+  --text-normal: #24292e;
+  --text-muted: #57606a;
+  --text-accent: #0969da;
+  --interactive-accent: #0969da;
+  --text-header: #0000ff;
+  --border-color: #d0d7de;
+  --code-background: #f6f8fa;
+  --code-border: #d0d7de;
+  
+}
+
+body {
+  --code-background: #fafafa;
+  --code-normal: #5c6773;
+  --code-comment: #abb0b6;
+  --code-function: #ff7733;
+  --code-important: #f43e5c;
+  --code-keyword: #ff7733;
+  --code-property: #0088ff;
+  --code-punctuation: #5c6773;
+  --code-string: #86b300;
+  --code-tag: #ff7733;
+  --code-value: #d59713;
+  --anim-duration-none: 0;
+  --anim-duration-superfast: 70ms;
+  --anim-duration-fast: 140ms;
+  --anim-duration-moderate: 300ms;
+  --anim-duration-slow: 560ms;
+  --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1);
+  --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+  /* Blockquotes */
+  --blockquote-border-thickness: 2px;
+  --blockquote-border-color: var(--interactive-accent);
+  --blockquote-font-style: normal;
+  --blockquote-color: inherit;
+  --blockquote-background-color: transparent;
+  --inline-title-color: var(--h1-color);
+  --inline-title-font: var(--h1-font);
+  --inline-title-line-height: var(--h1-line-height);
+  --inline-title-size: var(--h1-size);
+  --inline-title-style: var(--h1-style);
+  --inline-title-variant: var(--h1-variant);
+  --inline-title-weight: var(--h1-weight);
+  --inline-title-margin-bottom: 0.5em;
+  --input-height: 30px;
+  --input-radius: 5px;
+  --input-font-weight: var(--font-normal);
+  --input-border-width: 1px;
+  --layer-cover: 5;
+  --layer-sidedock: 10;
+  --layer-status-bar: 15;
+  --layer-popover: 30;
+  --layer-slides: 45;
+  --layer-modal: 50;
+  --layer-notice: 60;
+  --layer-menu: 65;
+  --layer-tooltip: 70;
+  --layer-dragged-item: 80;
+  --list-marker-color: blue;
+  --list-marker-color-hover: #0055ff; /* A brighter blue on hover */
+  --list-marker-color-collapsed: #0077cc; /* A slightly different shade for collapsed items */
+  /* Improved UX/UI Sidebar Styling for Obsidian */
+
+/* Navigation Item - General */
+--nav-item-size: var(--font-ui-medium); /* Slightly larger font for readability */
+--nav-item-weight: 500; /* Medium font weight for better contrast */
+--nav-item-white-space: nowrap; /* Prevents text wrapping */
+
+/* Navigation Item - Colors */
+--nav-item-color: var(--text-normal); /* Default text color */
+--nav-item-color-hover: var(--text-title-higher); /* Brighter hover text */
+--nav-item-color-active: var(--color-accent); /* Active item stands out */
+--nav-item-color-selected: var(--color-accent); /* Selected item matches active state */
+--nav-item-color-highlighted: var(--color-accent-hover); /* Highlighted item is more distinct */
+
+/* Navigation Item - Backgrounds */
+--nav-item-background-hover: hsla(var(--color-accent-hsl), 0.1); /* Soft accent background on hover */
+--nav-item-background-active: hsla(var(--color-accent-hsl), 0.15); /* Slightly stronger background for active */
+--nav-item-background-selected: hsla(var(--color-accent-hsl), 0.2); /* Clear selection indication */
+
+/* Navigation Item - Padding & Spacing */
+--nav-item-padding: 8px 12px; /* Comfortable spacing for clicking */
+--nav-item-parent-padding: var(--nav-item-padding); /* Uniform padding */
+--nav-item-children-padding-left: 16px; /* Indent child items for clarity */
+--nav-item-children-margin-left: 8px; /* Space between parent and child items */
+
+/* Indentation Guides (for folders & nested items) */
+--nav-indentation-guide-width: 2px; /* Make guides slightly thicker */
+--nav-indentation-guide-color: var(--text-faint); /* Subtle but visible indentation guides */
+
+/* Collapse Icons (for folders) */
+--nav-collapse-icon-color: var(--text-muted); /* Default folder icon color */
+--nav-collapse-icon-color-collapsed: var(--text-normal); /* More visible when collapsed */
+/* 🌟 Improved UX/UI for Tables and Tags in Obsidian */
+
+/* 🟢 Table Styles */
+--table-background: var(--background-primary); /* Softer background */
+--table-border-width: 1px; /* Maintain subtle borders */
+--table-border-color: var(--background-modifier-border); /* Light border */
+--table-white-space: normal; /* Prevent overflow */
+--table-column-max-width: 400px; /* Prevent overly wide columns */
+
+/* 🟡 Table Headers */
+--table-header-background: var(--background-secondary); /* Distinct header background */
+--table-header-background-hover: var(--background-secondary-alt); /* Light hover effect */
+--table-header-border-width: 1px;
+--table-header-border-color: var(--table-border-color);
+--table-header-font: inherit;
+--table-header-size: var(--font-text-size);
+--table-header-weight: bold; /* Improve readability */
+--table-header-color: var(--text-title); /* Stand out headers */
+
+/* 🔵 Table Rows */
+--table-row-background-hover: hsla(var(--color-accent-hsl), 0.05); /* Soft hover */
+--table-row-alt-background: hsla(var(--color-accent-hsl), 0.02); /* Zebra striping */
+--table-row-last-border-width: var(--table-border-width);
+
+/* 🟣 Table Column Borders */
+--table-column-first-border-width: var(--table-border-width);
+--table-column-last-border-width: var(--table-border-width);
+
+/* 🏷️ Improved Tag Styles */
+--tag-size: var(--font-smaller);
+--tag-color: var(--text-accent);
+--tag-color-hover: var(--text-title);
+--tag-decoration: none;
+--tag-decoration-hover: underline;
+--tag-background: hsla(var(--interactive-accent-hsl), 0.15); /* Softer background */
+--tag-background-hover: hsla(var(--interactive-accent-hsl), 0.25); /* Stronger hover */
+--tag-border-color: hsla(var(--interactive-accent-hsl), 0.2);
+--tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.3);
+--tag-border-width: 1px;
+--tag-padding-x: 0.75em; /* More spacing */
+--tag-padding-y: 0.3em;
+--tag-radius: 1.5em; /* Rounded for modern feel */
+
+
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  color: var(--text-header);
+  font-weight: 600;
+}
+
+.markdown-preview-view code {
+  background: var(--code-background);
+  border: 1px solid var(--code-border);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.markdown-preview-view pre {
+  background: var(--code-background);
+  border: 1px solid var(--code-border);
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.markdown-preview-view a {
+  color: var(--text-accent);
+  text-decoration: none;
+}
+
+.markdown-preview-view a:hover {
+  text-decoration: underline;
+}
+
+.cm-s-obsidian .cm-header {
+  color: var(--text-header) !important;
+}
+
+.cm-s-obsidian .cm-link {
+  color: var(--text-accent);
+}
+
+.cm-s-obsidian .cm-formatting-header {
+  color: var(--text-header) !important;
+  font-weight: 600;
+}
+/* 🌙 GitHub Dark Inspired Obsidian Theme */
+.theme-dark {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --rgb-hover: 177, 186, 196;
+/* Dracula Theme - Code Syntax Highlighting */
+--code-background: #282a36; /* Dark background for code */
+--code-normal: #f8f8f2; /* Light color for normal text */
+--code-comment: #6272a4; /* Soft blue for comments */
+--code-function: #50fa7b; /* Green for functions */
+--code-important: #ff5555; /* Red for important or errors */
+--code-keyword: #ff79c6; /* Pinkish for keywords */
+--code-property: #8be9fd; /* Light cyan for properties */
+--code-punctuation: #f8f8f2; /* White for punctuation */
+--code-string: #f1fa8c; /* Yellowish for strings */
+--code-tag: #ff79c6; /* Pinkish for tags */
+--code-value: #f4b642; /* Yellow for values */
+
+
+  /* Background & Text Colors */
+  --color-base-00: #0d1117; /* Dark background */
+  --color-base-10: #161b22; /* Darker shade for secondary background */
+  --color-base-20: #161b22; /* Similar to --color-base-10, can be used for cards or sections */
+  --color-base-25: #010409; /* Almost black, great for background extremes */
+  --color-base-30: #30363d; /* Slightly lighter for elements like sidebars */
+  --color-base-35: #21262d; /* Light gray for borders or muted elements */
+  --color-base-40: #30363d; /* Same as --color-base-30, used for sidebar or sections */
+  --color-base-50: #6e7681; /* Light grayish color for text, borders, etc. */
+  --color-base-70: #8b949e; /* Muted text or secondary text */
+  --color-base-100: #c9d1d9; /* Lighter gray for primary text, and UI elements like headings */
+
+  /* Accent Colors */
+  --accent-h-theme: 212;
+  --accent-s-theme: 100%;
+  --accent-l-theme: 67%;
+  --color-accent-hsl: var(--accent-h-theme), var(--accent-s-theme), var(--accent-l-theme);
+  --color-accent: hsl(var(--accent-h-theme), var(--accent-s-theme), var(--accent-l-theme));
+  --color-accent-1: hsl(var(--accent-h-theme), var(--accent-s-theme), calc(var(--accent-l-theme) - 3.8%));
+  --color-accent-2: hsl(var(--accent-h-theme), var(--accent-s-theme), calc(var(--accent-l-theme) + 3.8%));
+
+  /* UI Colors */
+  --background-secondary-alt: var(--color-base-25);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: hsla(var(--color-accent-hsl), 0.4);
+  --input-shadow: inset 0 0 0 1px #f0f6fc1a;
+  --input-shadow-hover: inset 0 0 0 1px var(--color-base-70);
+  --shadow-s: none;
+  --shadow-l: none;
+
+  /* Headers */
+  --inline-code-background: #6e768166;
+  --h-color-theme: var(--color-green);
+  --h1-color-theme: var(--color-green);
+  --h2-color-theme: var(--color-green);
+  --h3-color-theme: var(--color-green);
+  --h4-color-theme: var(--color-green);
+  --h5-color-theme: var(--color-green);
+  --h6-color-theme: var(--color-green);
+  --background-modifier-hover-alpha: 0.12;
+
+  /* Button Colors */
+  --color-btn-primary-bg: #238636;
+  --color-btn-primary-hover-bg: #2ea043;
+
+  /* Kanban Colors */
+  --kanban-background: var(--color-base-00);
+  --kanban-lane-background: var(--color-base-25);
+  --kanban-item-background: var(--color-base-10);
+  --kanban-lane-border: var(--color-base-35);
+  --kanban-lane-count: var(--color-base-35);
+  --kanban-options-btn: var(--color-base-30);
+}
+
+.is-mobile.theme-dark {
+  --color-base-00: #0d1117;
+  --color-base-10: #161b22;
+  --color-base-20: #161b22;
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
+  --modal-background: var(--color-base-25);
+  --search-result-background: var(--color-base-25);
+  --background-modifier-form-field: var(--background-modifier-border);
+  --background-modifier-cover: rgba(0, 0, 0, 0.5);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.15);
+  --settings-home-background: var(--color-base-00);
+}
+
